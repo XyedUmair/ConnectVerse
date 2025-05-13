@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConnectVerse</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>ConnectVerse - Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to ConnectVerse 🌐</h1>
-        <p>Connecting people across the world — starting from Pakistan!</p>
-    </header>
 
-    <main>
-        <section class="intro">
-            <h2>Why ConnectVerse?</h2>
-            <p>ConnectVerse is a social media platform designed to bring people together, share ideas, and build connections.</p>
-        </section>
+  <!-- Sidebar Toggle Button -->
+  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
 
-        <section class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>🌍 Global connectivity</li>
-                <li>💬 Secure messaging</li>
-                <li>📷 Share media (images, videos)</li>
-                <li>🛡️ Privacy-focused</li>
-            </ul>
-        </section>
-    </main>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li onclick="goTo('home')">🏠 Home</li>
+      <li onclick="goTo('settings')">⚙️ Settings</li>
+      <li onclick="goTo('notifications')">🔔 Notifications</li>
+      <li onclick="goTo('about')">ℹ️ About</li>
+      <li onclick="logout()">🚪 Logout</li>
+    </ul>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 ConnectVerse. All rights reserved.</p>
-    </footer>
+  <div class="content">
+    <h1>Welcome to ConnectVerse</h1>
+    <p>This is your homepage.</p>
+  </div>
 
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
